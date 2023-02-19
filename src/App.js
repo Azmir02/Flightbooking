@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Preview from "./Components/Preview";
+import Toppart from "./Components/Toppart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header id="header">
+        <div className="container">
+          <img src="./img/lws-logo.svg" alt="logo" className="logo" />
+          <div className="flex items-center">
+            <a className="text-white min-w-[50px] font-medium" href="#">
+              Home
+            </a>
+            <button className="log-btn btn">Login</button>
+          </div>
+        </div>
       </header>
-    </div>
+
+      <Toppart />
+      <Preview />
+    </>
   );
 }
 
